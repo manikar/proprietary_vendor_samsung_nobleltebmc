@@ -1167,11 +1167,11 @@
 	</path>
 
 	<path name="headset-mic">
-		<ctl name="AIF1TX1 Input 1" value="LHPF1" />
+                <ctl name="AIF1TX1 Input 1" value="LHPF1" />
 		<ctl name="AIF1TX2 Input 1" value="LHPF1" />
 		<ctl name="LHPF1 Input 1" value="IN2L" />
 		<ctl name="Headset Mic Switch" value="1" />
-		<path name="gain-media-headset-mic"/>
+                <path name="gain-media-headset-mic"/>
 	</path>
 
 	<!-- media input -->
@@ -1203,14 +1203,6 @@
 		<path name="capture_channel_invert" />
 		<path name="main-mic" />
 		<path name="2nd-mic" />
-	</path>
-
-	<path name="camcorder-headset-mic">
-		<path name="media-headset-mic" />
-	</path>
-
-	<path name="camcorder-headphone-mic">
-		<path name="camcorder-mic" />
 	</path>
 
 	<!-- voice input -->
@@ -2327,4 +2319,10 @@
 		<param name="SPK Enable Switch" id="0" />
 	</path>
 
+   	<path name="voice-rec-headset-mic">
+   	        <ctl name="AIF1TX1 Input 1" value="LHPF1" />
+ 	        <ctl name="AIF1TX2 Input 1" value="LHPF1" />
+                <path name="recording-headset-mic" />
+    	        <path name="gain-recording-headset-mic" />
+   	</path>
 </mixer>
